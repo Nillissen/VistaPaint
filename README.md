@@ -1,2 +1,2 @@
 # VistaPaint
-DeluxePaint inspired paint application
+DeluxePaint inspired cross-platform paint application.
