@@ -1,0 +1,379 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'VistaPaint V0.1'
+  ClientHeight = 600
+  ClientWidth = 826
+  Fill.Color = claLightgray
+  Fill.Kind = Solid
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object ToolPalette: TPanel
+    Align = MostTop
+    Size.Width = 826.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'pushpanel'
+    TabOrder = 0
+    object ToolDottedDraw: TSpeedButton
+      Tag = 1
+      Size.Width = 23.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'ToolDottedDraw'
+      OnClick = ToolButtonClick
+      object ImageToolDottedDraw: TImage
+        MultiResBitmap = <
+          item
+            Width = 23
+            Height = 23
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000017000000170806000000E02AD4
+              A0000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              006649444154484B637CFFFEFD7F061A0041414106B0E19B376F860A510FC4C5
+              C5313041D93401036338C85B204C091818972F5AB4088C61801C9F0C8E0845F7
+              09316070B81C064809FBC1E57252C27E34CCB1821114E6A48051C3B1024620A6
+              49EDCFC0C0C00000208E242996B4D3AB0000000049454E44AE426082}
+            FileName = 
+              'C:\Users\chrisnillissen\Desktop\VistaPaint\Resources\Tools\Dotte' +
+              'dFreehand.png'
+          end>
+        Align = Contents
+        Locked = True
+        HitTest = False
+        Size.Width = 23.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object ToolContinuousDraw: TSpeedButton
+      Tag = 2
+      Position.Y = 24.000000000000000000
+      Size.Width = 23.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'ToolContinuousDraw'
+      OnClick = ToolButtonClick
+      object ImageToolContinuousDraw: TImage
+        MultiResBitmap = <
+          item
+            Width = 23
+            Height = 23
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000017000000170806000000E02AD4
+              A0000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              008D49444154484BED95D10D80200C05AB710116643856603046504A2C510435
+              DA47FCF09262D28FC71169184208330130C6500AF7DEAF2D3DACB5441CEE9C63
+              7B95E22CC91BE302E3101E77DDD51BA0E6D3FACD96E9476C68F5EFD0C7BC6526
+              FD2727E87B5B34F9C3ABA885D726FADBE662CCF7BF9C01A8799ED02BCA4915CE
+              26166A0E7DE6B0E6B1F8BD0340B4006A13534548B8012C0000000049454E44AE
+              426082}
+            FileName = 
+              'C:\Users\chrisnillissen\Desktop\VistaPaint\Resources\Tools\Conti' +
+              'nuousFreehand.png'
+          end>
+        Align = Contents
+        Locked = True
+        HitTest = False
+        Size.Width = 23.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object ToolStraightLine: TSpeedButton
+      Tag = 3
+      Position.X = 24.000000000000000000
+      Size.Width = 23.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'ToolStraightLine'
+      OnClick = ToolButtonClick
+      object ImageToolStraightLine: TImage
+        MultiResBitmap = <
+          item
+            Width = 23
+            Height = 23
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000017000000170806000000E02AD4
+              A0000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              007049444154484BCDD5BB0DC0200C45D14736F0821E8E15188C119280781D45
+              3E36F84A96108575A848B5D6130E8908FAF252CAB8B24B55718CB34BB197B7E7
+              B79915534E71CEB9CFAC58F227621643FE46CCF6CABF88D91EF91F315B2BB710
+              B3B5720B315B2BB7CC7579BAC7E5F707800BB36A362988E3A35F000000004945
+              4E44AE426082}
+            FileName = 
+              'C:\Users\chrisnillissen\Desktop\VistaPaint\Resources\Tools\Line.' +
+              'png'
+          end>
+        Align = Contents
+        Locked = True
+        HitTest = False
+        Size.Width = 23.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object ToolCurvedLine: TSpeedButton
+      Tag = 4
+      Position.X = 24.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 23.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'ToolCurvedLine'
+      OnClick = ToolButtonClick
+      object ImageToolCurvedLine: TImage
+        MultiResBitmap = <
+          item
+            Width = 23
+            Height = 23
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000017000000170806000000E02AD4
+              A0000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              007B49444154484B637CFFFEFD7F061A0041414106B0E19B376F860A510FC4C5
+              C5313041D9340134351C1E2C206FE0038B162D82B28803340F16A22314DD6784
+              7C32785C8E0E603EC1E5039ABB9C6CC3412E0661900BD1E3030606A7CB890183
+              DB707C613F1AE658C1A8E1F054830C68EA724620A649EDCFC0C0C00000B88E39
+              EF4D4E16F60000000049454E44AE426082}
+            FileName = 
+              'C:\Users\chrisnillissen\Desktop\VistaPaint\Resources\Tools\Curve' +
+              '.png'
+          end>
+        Align = Contents
+        Locked = True
+        HitTest = False
+        Size.Width = 23.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object ToolFill: TSpeedButton
+      Tag = 5
+      Position.X = 48.000000000000000000
+      Size.Width = 23.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'ToolFill'
+      OnClick = ToolButtonClick
+      object Image5: TImage
+        MultiResBitmap = <
+          item
+            Width = 23
+            Height = 23
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000017000000170806000000E02AD4
+              A0000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              008F49444154484BCD95DB09C0200C45D3D2055CD0E15CC1C11CA1ED15F323A4
+              89D28807824FC221063C4A2937391042A09A3CE7DCB6FE23C648679BABE03262
+              0473F219AE368AB06D4AA98EFDFA0B5773F1413543CBF95AF3919A02E9FE7A73
+              C65253B04FCD7B7A43CD9871373727870902C69A35B387F98831B3B65BB81B24
+              ACF6EEDDA2F6F92CFEE66FB8FCFE44440F9045631F71FF395C0000000049454E
+              44AE426082}
+            FileName = 
+              'C:\Users\chrisnillissen\Desktop\VistaPaint\Resources\Tools\Fill.' +
+              'png'
+          end>
+        Align = Contents
+        Locked = True
+        HitTest = False
+        Size.Width = 23.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object ToolSpray: TSpeedButton
+      Tag = 6
+      Position.X = 48.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 23.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'ToolSpray'
+      OnClick = ToolButtonClick
+      object ImageToolSpray: TImage
+        MultiResBitmap = <
+          item
+            Width = 23
+            Height = 23
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000017000000170806000000E02AD4
+              A0000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              008D49444154484BED95610A80200C855778012FE8E1BC8207F308D5130732D4
+              2C5AF9A30F866E8CF936059718E3460A586B29150F21E4D07338E768CD7B15E6
+              2A8E76618CF44B54950F5F28ABF3DEA7F50CE4AB2A37796DD2522CE3B5BC7766
+              CE274B7ACA7A20FFDBD7D2522CE335FF7FE755868B43310C8AB80B20FD923966
+              7E9579667E07DD991FA6F2FB1311ED552059BD33BE6D3F0000000049454E44AE
+              426082}
+            FileName = 
+              'C:\Users\chrisnillissen\Desktop\VistaPaint\Resources\Tools\Spray' +
+              '.png'
+          end>
+        Align = Contents
+        Locked = True
+        HitTest = False
+        Size.Width = 23.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object ToolSquare: TSpeedButton
+      Tag = 7
+      Position.X = 72.000000000000000000
+      Size.Width = 23.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'ToolSquare'
+      OnClick = ToolButtonClick
+      object ImageToolSquare: TImage
+        MultiResBitmap = <
+          item
+            Width = 23
+            Height = 23
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000017000000170806000000E02AD4
+              A0000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              008E49444154484BCD95D10D80200C05AB71011664385660304650ABAD318011
+              A4152E21103E1EE78B812984B08202C61838C2BDF7B42587B516665A37836138
+              EE8885E7486A894F2FC53947AB13D15A722C3427C42631255FA86A5E1D9EFB2B
+              9E18C3BCC698E96BFEC598E963DE62CCF4EDBC05D5F0EB56E47EDFEE945230EF
+              9F5AD058CA9AD1ED7C1F2AAF3F00C006881F31F7ABF0D6810000000049454E44
+              AE426082}
+            FileName = 
+              'C:\Users\chrisnillissen\Desktop\VistaPaint\Resources\Tools\Squar' +
+              'e.png'
+          end>
+        Align = Contents
+        Locked = True
+        HitTest = False
+        Size.Width = 23.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object ToolCircle: TSpeedButton
+      Tag = 8
+      Position.X = 72.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 23.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'ToolCircle'
+      OnClick = ToolButtonClick
+      object ImageToolCircle: TImage
+        MultiResBitmap = <
+          item
+            Width = 23
+            Height = 23
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000017000000170806000000E02AD4
+              A0000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              009B49444154484BCD95010A80200C456774012FE8E1BC8207F308D56A935893
+              449CF5201259E3313FE672CE1B18E0BD87B3794A89B6C611428095D655B04823
+              C648AB0BAEBBEF2FF436E1612E4DA521D352676A5E6D8E2635EB564CCD4B14B5
+              D3D6A8A587E1EFB1EE9B994BD0E4CD5AF2AD798F3133272D4CAFA54C19F6F947
+              5A7A306D5E6E459EB5363B8D967B676E5A46619E16773C267F7F00801D518944
+              5DFB6EE7590000000049454E44AE426082}
+            FileName = 
+              'C:\Users\chrisnillissen\Desktop\VistaPaint\Resources\Tools\Circl' +
+              'e.png'
+          end>
+        Align = Contents
+        Locked = True
+        HitTest = False
+        Size.Width = 23.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object ToolClear: TSpeedButton
+      Position.X = 96.000000000000000000
+      Size.Width = 23.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'ToolClear'
+      OnClick = ToolButtonClick
+      object ImageToolClear: TImage
+        MultiResBitmap = <
+          item
+            Width = 23
+            Height = 23
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000017000000170806000000E02AD4
+              A0000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              008149444154484BD595D109C0200C44CFD205B260867305077384B68A0111CD
+              5723E68144831C971830E49C1F184044A8E229A596FA0F66C6D5F626988ADF2D
+              D6327A628C354A5ECEC2EA7ECF1EE7C2CC818656A1DF073D5BBCF47A9C1CC147
+              5BCA948C9376B673713CEBBD8F9ECFD82BBE9ADB555EC3D4B9DF6F2E7CCBE4F7
+              07801773BE335FC110C6280000000049454E44AE426082}
+            FileName = 
+              'C:\Users\chrisnillissen\Desktop\VistaPaint\Resources\Tools\Clear' +
+              '.png'
+          end>
+        Align = Contents
+        Locked = True
+        HitTest = False
+        Size.Width = 23.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object CheckboxFill: TCheckBox
+      Align = Right
+      Position.X = 536.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Text = 'Fill'
+      OnChange = CheckboxFillChange
+    end
+    object SpinBoxThickness: TSpinBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Right
+      TabOrder = 4
+      Cursor = crIBeam
+      Min = 1.000000000000000000
+      Max = 50.000000000000000000
+      Value = 1.000000000000000000
+      Position.X = 586.000000000000000000
+      Size.Width = 72.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      OnChange = SpinBoxThicknessChange
+    end
+    object ComboColorBoxForground: TComboColorBox
+      Align = Right
+      Color = claBlack
+      Position.X = 658.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      OnChange = ComboColorBoxForgroundChange
+    end
+    object ComboColorBoxBackground: TComboColorBox
+      Align = Right
+      Color = claWhite
+      Position.X = 706.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      OnChange = ComboColorBoxBackgroundChange
+    end
+    object ButtonSave: TSpeedButton
+      Align = Right
+      Position.X = 754.000000000000000000
+      Size.Width = 72.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Save'
+      OnClick = ButtonSaveClick
+    end
+  end
+end
